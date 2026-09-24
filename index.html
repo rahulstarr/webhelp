@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webhelp Task Manager</title>
+  <link rel="stylesheet" href="webhelp.css">
+</head>
+<body>
+
+  <h1>Task Manager</h1>
+  
+  <!-- Search Field -->
+  <input id="searchInput" type="text" placeholder="Search tasks...">
+  
+  <br><br>
+  
+  <!-- Add Task Controls -->
+  <input id="taskInput" type="text" placeholder="Enter a new task...">
+  <button id="addBtn">Add Task</button>
+  
+  <!-- Task Count -->
+  <p id="count">Tasks: 0</p>
+  
+  <!-- Filter Controls -->
+  <div style="margin: 10px 0;">
+    <button id="allBtn">All</button>
+    <button id="pendingBtn">Pending</button>
+    <button id="completedBtn">Completed</button>
+  </div>
+
+  <!-- The Display Box Where Tasks Appear -->
+  <div id="box" style="min-height: 50px; border: 1px dashed #ccc; margin: 15px 0; padding: 10px;">
+    <!-- Tasks will be injected here via JavaScript -->
+  </div>
+  
+  <!-- Clear Button -->
+  <button id="clearBtn">Clear All</button>
+
+  <script src="webhelp.js"></script>
+</body>
+</html>
